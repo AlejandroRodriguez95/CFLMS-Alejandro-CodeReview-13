@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <div class="container">        
+        <div class='row'>
+            <div class="card col-lg-8 mx-auto">
+                    <img class="card-img-top" src="{{event.image}}">
+                        <div class="card-body">
+                            <h5 class="card-title">{{event.name}}</h5>
+                            <p class="card-text"><i>{{event.description}}</i></p>
+                            <p class="card-text">Date: {{event.date}}</p>
+                            <p class='card-text'>Capacity: {{event.capacity}}</p>
+                            <hr>
+                            <p class='card-text'><b>Contact:</b><br> mail: {{event.email}}<br>phone: {{event.phone}}<br></p>
+                            <p class="card-text"><small class="text-muted">Location: {{event.address}}</small></p>
+                        </div>
+                <a class="btn btn-primary" href="/">Back to events</a>
+                </div>
+        </div>
+    </div>
+{% endblock %}
